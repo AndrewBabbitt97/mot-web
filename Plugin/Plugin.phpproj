@@ -1,0 +1,65 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>Plugin</Name>
+    <ProjectGuid>b27964c1-b2a6-4ad3-b786-15fb7263ab57</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>
+    </RootNamespace>
+    <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+    <AssemblyName>Plugin</AssemblyName>
+    <Runtime>PHP</Runtime>
+    <RuntimeVersion>5.6</RuntimeVersion>
+    <SaveServerSettingsInUserFile>false</SaveServerSettingsInUserFile>
+    <EnvName>Custom</EnvName>
+    <PHPDevHostName>localhost</PHPDevHostName>
+    <PHPDevAutoPort>true</PHPDevAutoPort>
+    <CustomServerUrl>http://11.0.0.4/</CustomServerUrl>
+    <CustomXdebugPort>9000</CustomXdebugPort>
+    <PublishEvent>BeforeRun</PublishEvent>
+    <DebugMappingMethod>Automatic</DebugMappingMethod>
+    <DBGpProxyEnabled>false</DBGpProxyEnabled>
+    <DBGpProxyPort>9001</DBGpProxyPort>
+    <PublishBeforeDebugProfile>Plugin</PublishBeforeDebugProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="activate.php" />
+    <Compile Include="classes\api\cdn.php" />
+    <Compile Include="controllers\admin.php" />
+    <Compile Include="controllers\api.php" />
+    <Compile Include="controllers\play.php" />
+    <Compile Include="deactivate.php" />
+    <Compile Include="init.php" />
+    <Compile Include="install.php" />
+    <Compile Include="uninstall.php" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="langs.zip" />
+    <Content Include="plugin.xml" />
+    <Content Include="views\controllers\admin_settings.html" />
+    <Content Include="views\controllers\admin_status.html" />
+    <Content Include="views\controllers\play_android.html" />
+    <Content Include="views\controllers\play_webgl.html" />
+    <Content Include="views\controllers\play_windows.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="classes\" />
+    <Folder Include="classes\api\" />
+    <Folder Include="controllers\" />
+    <Folder Include="views\" />
+    <Folder Include="views\controllers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Oxwall\Oxwall.phpproj">
+      <Name>Oxwall</Name>
+      <Project>{86d9bf30-79a2-498a-afce-3a5844377af7}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

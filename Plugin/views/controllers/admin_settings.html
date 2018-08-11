@@ -1,0 +1,16 @@
+﻿{$mainmenu}
+{form name="settingsform"}
+<table class="ow_table_1 ow_form">
+    <tr class="ow_tr_first">
+        <th class="ow_name ow_txtleft" colspan="3">
+            <span class="ow_section_icon ow_ic_app">{text key='mistoftime+admin_general_settings'}</span>
+        </th>
+    </tr>
+    <tr class="{cycle name=" install" values="ow_alt1,ow_alt2" }">
+        <td class="ow_label">{label name="cdnurl"}</td>
+        <td class="ow_value">{input name="cdnurl"}{error name="cdnurl"}</td>
+        <td class="ow_desc"></td>
+    </tr>
+</table>
+<div class="clearfix ow_stdmargin"><div class="ow_right">{submit name='settingssave' class='ow_ic_save ow_positive'}</div></div>
+{/form}

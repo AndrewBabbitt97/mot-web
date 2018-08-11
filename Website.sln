@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{A0786B88-2ADB-4C21-ABE8-AA2D79766269}") = "Oxwall", "Oxwall\Oxwall.phpproj", "{86D9BF30-79A2-498A-AFCE-3A5844377AF7}"
+EndProject
+Project("{A0786B88-2ADB-4C21-ABE8-AA2D79766269}") = "Theme", "Theme\Theme.phpproj", "{011F87B7-EC59-458C-8AA8-8F2EC75B5F98}"
+EndProject
+Project("{A0786B88-2ADB-4C21-ABE8-AA2D79766269}") = "Plugin", "Plugin\Plugin.phpproj", "{B27964C1-B2A6-4AD3-B786-15FB7263AB57}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{86D9BF30-79A2-498A-AFCE-3A5844377AF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86D9BF30-79A2-498A-AFCE-3A5844377AF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{011F87B7-EC59-458C-8AA8-8F2EC75B5F98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{011F87B7-EC59-458C-8AA8-8F2EC75B5F98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B27964C1-B2A6-4AD3-B786-15FB7263AB57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B27964C1-B2A6-4AD3-B786-15FB7263AB57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A3196A02-F74A-45DB-8D75-6A9EEE993823}
+	EndGlobalSection
+EndGlobal

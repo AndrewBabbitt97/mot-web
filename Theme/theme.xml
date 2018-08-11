@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<theme>
+    <name>Mist of Time</name>
+    <key>mistoftime</key>
+    <version>1.0</version>
+    <compatibility>1.7 and higher</compatibility>
+    <description>The Mist of Time theme</description>
+    <author>Ryuusoft</author>
+    <authorEmail>admin@ryuusoft.net</authorEmail>
+    <authorUrl>http://ryuusoft.net/</authorUrl>
+    <developerKey>3ffc1894c6112839db26cd4a5eb3a433</developerKey>
+    <build>1</build>
+    <copyright>Copyright (C) 2017 Ryuusoft. All rights reserved.</copyright>
+    <license>Private</license>
+    <licenseUrl>http://ryuusoft.net/</licenseUrl>
+</theme>
